@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>Tallo要塞</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="title.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 
+     {\__/}   
+    ( • ᴗ •)   
+   c/ > ♥️ < 
+            -->
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 讓表格邊框合併 */
+            margin: 10px auto;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+            border: none;/* 移除邊框 */
+            font-size: 14px; /* 縮小文字大小 */
+        }
+        th {
+            background-color: #f2ecf3;
+            font-weight: bold;
+        }
+        tfoot {
+            font-style: italic;
+            text-align: right;
+            background-color: #f2ecf3;
+        }
+        .right-align-image {
+            float: right; /* 將圖片靠右 */
+            max-height: 100px; /* 限制圖片大小 */
+    </style>
+
+</head>
+<body>
+    <div id="body-warp">
+        <nav class="not_index_bg" id="nav">
+            <div id="page_site-info">
+
+                <div id="site-title">
+                    <span class="blogtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        
+        <!--歡迎介面-->            
+         <script>
+        var typed = new Typed(".blogtitle", {
+            strings: ['歡迎蒞臨Tallo的秘密基地₍ᐢ.ˬ.ᐢ₎', 'Welcome to Tallo\'s Secret Base₍ᐢ.ˬ.ᐢ₎'],
+            startDelay: 200,
+            typeSpeed: 90,
+            loop: true,
+            backSpeed: 40,
+            showCursor: true
+            
+        });
+    </script>
+    </div>
+</div>
+</nav>
+<main id="content-outer">
+<div class="layout_page" id="content-inner">
+    <div class="aside_content" id="aside_content">
+
+        <!--初始頁-->
+        <div class="card-widget card-info">
+            <div class="card-content">
+                <div class="card-info-avatar is-center">
+                    <img class="avatar-img" src="head.jpeg" height="150" alt="Rina">
+                    <div class="author-info__name">Tallo</div>
+                    <div class="author-info__description">Fe₂O₃||廢鐵||小神棍||花花梨...以下略<br>
+                        想嘗試各種玩意，任何事都想學一些<br>除了數學，我跟數學有仇</div>
+                </div>
+            </div>
+        </div>
+
+        <!--分頁啟動-->
+        <div class="card-widget card-announcement">
+            <div class="card-content">
+                <div class="item-headline">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    <span>進入軍事要塞</span>
+                </div>
+                    <nav>
+                        <ul>
+                            <ol><a href="#box">潘朵拉的禮盒</a> 必須做好充足準備，才能打開它</ol>
+                            <ol><a href="#hole">我推的坑</a> 好東西一起分享</ol>
+                            <ol><a href="#daily">日常</a> 好混的碳生物</ol>
+                            <ol><a href="#ing">正在前進</a> 航向偉大的目標</ol>
+                            <ol><a href="#contact"> 你可以在這裡找到我!</a> 駐點地帶</ol>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+
+        <div class="card-widget card-webinfo">
+            <div class="card-content">
+                <div class="item-headline">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>網站資訊</span>
+                </div>
+                <div class="webinfo">
+                    <p> 我的第一個網站！來自從沒碰過CSS跟JS的笨蛋，一切都有待改進:D<br>還會持續更新..哈</p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--主頁降臨-->
+    <article id="page">
+        <div class="article-container">
+            <div class="tool">
+                
+        <section id="box" class="hidden">
+            <!--display: flex;-->
+            <section style="background-color: #e0e1dd; text-align: center; height: 500px;justify-content: center; align-items: center;">
+                <table>
+                    <br><br><br>
+                <tr><h2><img src="crisis.png" height="25px" alt="warn"> <b>警告 此行甚是凶險</b></h2></tr>
+                <tr><p>以下內容需要做好<b>充足準備</b>才能觀看，以免傷害到您，因此需要再次確認您的意志。</p></tr><br>
+                <tr>
+                    <a href="#pass">
+                        <button style="padding: 10px 17px; background-color: #d7afc5; color: white; border: none; border-radius: 5px;">
+                            衝就對了
+                        </button>
+                    </a>
+                    <button id="showMessageBtn" style="padding: 10px 17px; background-color: #d7afc5; color: rgb(0, 0, 0); border: 1px; border-radius: 5px;">
+                            珍惜生命
+                    </button>
+                </tr>
+
+                </table>
+            </section>
+            </div>
+
+<!-- 自訂的消息框 -->
+<div id="customMessageBox" class="message-box">
+    <p><i class="fa fa-heart"></i> 你很棒，愛惜生命非常重要</p>
+    <button id="closeMessageBtn" style="padding: 10px 17px; background-color: #d7afc5; color: rgb(255, 255, 255); border: 1px; border-radius: 5px;">返回</button>
+</div>
+
+<script>
+    // 顯示消息框
+    document.getElementById('showMessageBtn').onclick = function() {
+        document.getElementById('customMessageBox').style.display = 'block';
+    };
+
+    // 關閉消息框
+    document.getElementById('closeMessageBtn').onclick = function() {
+        document.getElementById('customMessageBox').style.display = 'none';
+    };
+</script>
+
+
+            <section id="pass" class="hidden">
+                    <h2 class="major">潘朵拉的盒子</h2>
+                    <h4>自認自己沒有黑歷史σ`∀´)σ...才有鬼，我的黑歷史滿天飛OAO</h4>
+
+                    <h5><i class="fa fa-address-card"></i> 個資危險</h5>
+                    <p>◆居住：四海為家</p>
+                    <p>◇生日：每一天都是我的生日！</p>
+                    <p>◆專長：摸魚、放空、睡覺...</p>
+                    
+                    <h5><i class="fa fa-font"></i> 很想到處簽，好玩啊(ゝ∀･)</h5>
+                    <table>
+                        <tr><td><img src="sign.jpg" height="180px" alt="sign"></td><td><img src="mumeiguo.jpg" height="150px" alt="sign"></td></tr>
+                        <tr><td>我有簽名了耶</td><td>補一個高中的，不知道為什麼會有：(</td></tr>
+                        
+                    </table>
+                    
+                    <h5><i class="fa fa-book"></i> 畫冊</h5>
+                    <p>沒這東西，我好懶，太久沒動筆</p>
+                
+                    <table>
+                        <thead>
+                            <h5><i class="fa fa-image"></i> 內部機密資料，閱後即焚</h5>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>
+                            <img src="3D/no1.jpg" alt="is me" style="width: 150px; border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no2.jpg" alt="is me" style="width: 150px; border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                            <img src="3D/no3.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no5.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="3D/no4.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no6.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no7.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no10.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="3D/no8.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no9.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no12.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                            <td>
+                                <img src="3D/no11.jpg" alt="is me" style="width: 150px;border: 4px solid rgb(227, 195, 234); border-radius: 10px;object-fit: cover; ">
+                            </td>
+                        </tr>
+                        </tbody>
+                        
+                    </table>
+            </section>
+                
+        </section>
+
+
+                    <section id="hole" class="hidden">
+                        <h1>自己掉進去的坑</h1>
+                        <p>喜歡的東西太多了放不完(((暫時從缺)))我慢慢放</p>
+                        <p>音樂、動畫、漫畫、遊戲、小說、太多</p>
+            
+            
+            
+                    </section>
+            
+                    <section id="daily" class="hidden">
+                        <h2 class="major">我的日常</h2>
+                        <table>
+                            <!-- 表格表頭 -->
+                            <thead>
+                                <tr>
+                                    <th><h3><i class="fa fa-tag" style="color: #e79523;"></i> 特徵在這</h3></th>
+                                    <th><h3><i class="fa fa-flag" style="color: #ba7ce4;"></i> 正在學習</h3></th>
+                                    <th><h3><i class="fa fa-unlock" style="color: #6994dd;"></i> 就很想試試</h3></th>
+                                </tr>
+                            </thead>
+                            
+                            <!-- 表格內容 -->
+                            <tbody>
+                                <tr>
+                                    <td>嚴重社交障礙<br>不定時會發癲啊!!<br>喜歡被誇誇，心情會變好✧*｡٩(ˊᗜˋ*)و✧*｡<br>想盡辦法偷懶和放空
+                                        <br>喜歡恐怖的東西？我也不知道為什麼<br>可愛即是真理！<br>能睡就不會起來<br>生命力跟小強一樣頑固
+                                        <br>控制不住的愛哭鬼QHQ<br>挑食小鬼</td>
+                                    <td>英文/日文/俄文/法文<br>書法啦(常被自己的字醜到<br>看書多看書，讓自己變營養<br>
+                                        鍛鍊體力...不想一入伍就被長官電；沒錯！還有瑜珈<br>去除自卑老毛病，找到自信先ùwú<br>撰寫網站</td>
+                                    <td>試膽大會呢？好想玩<br>八字鬍，一直很想戴看看<br>啊哈我想染頭髮</td>
+                                </tr>
+                            </tbody>
+                    
+                            <!-- 表格底部 -->
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">有點悠閒哈(/▽＼)<img src="Rina.png" height="100px" class="right-align-image" alt="Rina小可愛"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+            
+                    </section>
+            
+            
+                    <section id="ing" class="hidden">
+                        <h2 class="major">正在向前進</h2>
+                        <p>◆海軍入伍計畫，國軍我來啦！</p>
+                        <p>◇組樂團（至今仍在MyGo後遺症）</p>
+                        <p>◆存錢買一台機車，我要到處飛</p>
+                        <p>◇我的斂財夢，成為大富豪#</p>
+            
+                    </section>
+            
+                    <section id="contact" class="hidden">
+                        <h2 class="major">駐點地帶</h2>
+                        <div>
+                            <a href="https://www.instagram.com/tallo_is_noob/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/tallo-is-noob" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://discord.gg/97BjVJVhuy" target="_blank">
+                                <i class="fa fa-cloud"></i>
+                            </a>
+                            
+                        </div>
+                            
+                    </section>
+
+            </div>
+        </div>
+    </article>            
+ 
+
+</body>
+
+</html>
